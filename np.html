@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nexus</title>
+	<link rel="stylesheet" href="/np.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="heading">WELCOME TO NEXUS</h1>
+	</header>
+
+	<!-- container div -->
+	<div class="container">
+		<!-- upper button section to select the login or signup form -->
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login" onclick="validateEmail()">Login</button>
+			<button class="signup">Signup</button>
+		</div>
+
+		<!-- Form section that contains the login and the signup form -->
+		<div class="form-section">
+		<form action="/login" method="post">
+
+				<!-- login form -->
+				<div class="login-box">
+					<input type="email" name="name" class="email ele" placeholder="youremail@gmail.com">
+					<input type="password" name="password" class="password ele" placeholder="password">
+					<button type="submit" class="clkbtn" onclick="validateEmail()">Login</button>
+				</div>
+				
+		</form>
+
+			<!-- signup form -->
+			<form action="/signup" method="post">
+
+				<div class="signup-box">
+					<input type="text" class="name ele" placeholder="Enter your name">
+					<input type="email" name="name" class="email ele" placeholder="youremail@gmail.com">
+					<input type="password" name="password" class="password ele" placeholder="password">
+					<button type="submit" class="clkbtn" onclick="validateSignup()">Signup</button>
+				</div>
+			</form>
+			</div>
+	</div>
+
+	<script src="/np.js"></script>
+
+</body>
+
+</html>
